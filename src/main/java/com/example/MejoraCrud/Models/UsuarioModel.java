@@ -1,11 +1,13 @@
 package com.example.MejoraCrud.Models;
 
 
+import javax.persistence.*;
+
 @Entity
 @Table(name = "usuario")
 public class UsuarioModel {
     @Id
-    @GenerateValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique= true, nullable=false)
     private long id;
 
