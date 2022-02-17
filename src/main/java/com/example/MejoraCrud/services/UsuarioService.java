@@ -38,4 +38,8 @@ public class UsuarioService {
             return false;
         }
     }
+
+    public ArrayList<UsuarioModel> obtenerPorNombre(Integer nombre){
+        return usuarioRepositoari.findByNombre(nombre);
+    }
 }
