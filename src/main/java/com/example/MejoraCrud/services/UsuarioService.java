@@ -42,4 +42,9 @@ public class UsuarioService {
     public ArrayList<UsuarioModel> obtenerPorNombre(String nombre){
         return usuarioRepositoari.findByNombre(nombre);
     }
+
+    public ArrayList<UsuarioModel> obtenerPorEdad(Integer edad){
+        return usuarioRepositoari.findByEdad(edad);
+    }
+
 }

@@ -53,4 +53,11 @@ public class UsuarioController {
         return this.usuarioService.obtenerPorNombre(nombre);
     }
 
+    @GetMapping(path = "/tiene")
+    public ArrayList<UsuarioModel> obtenerUsuarioPorNombre(@RequestParam("edad") Integer edad){
+        return this.usuarioService.obtenerPorEdad(edad);
+    }
+    
+
+
 }

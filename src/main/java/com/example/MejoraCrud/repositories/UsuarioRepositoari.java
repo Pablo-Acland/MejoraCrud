@@ -11,5 +11,6 @@ import java.util.ArrayList;
 public interface UsuarioRepositoari extends CrudRepository<UsuarioModel, Long> {
     public abstract ArrayList<UsuarioModel> findByPrioridad(Integer prioridad);
     public abstract ArrayList<UsuarioModel> findByNombre(String nombre);
+    public abstract ArrayList<UsuarioModel> findByEdad(Integer edad);
 
 }

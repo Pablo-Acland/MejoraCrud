@@ -14,6 +14,7 @@ public class UsuarioModel {
     private String nombre;
     private String email;
     private Integer prioridad;
+    private Integer edad;
 
     public long getId() {
         return id;
@@ -47,5 +48,11 @@ public class UsuarioModel {
         this.prioridad = prioridad;
     }
 
+    public Integer getEdad() {
+        return edad;
+    }
 
+    public void setEdad(Integer edad) {
+        this.edad = edad;
+    }
 }
