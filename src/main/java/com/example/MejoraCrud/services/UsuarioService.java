@@ -39,7 +39,7 @@ public class UsuarioService {
         }
     }
 
-    public ArrayList<UsuarioModel> obtenerPorNombre(Integer nombre){
+    public ArrayList<UsuarioModel> obtenerPorNombre(String nombre){
         return usuarioRepositoari.findByNombre(nombre);
     }
 }
